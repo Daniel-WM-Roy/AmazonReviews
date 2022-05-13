@@ -1,0 +1,8 @@
+.idea
+.bsp
+*.iml
+target
+model/target
+api/target
+ingestion/target
+project/target

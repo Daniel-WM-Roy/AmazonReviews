@@ -2,11 +2,11 @@ ThisBuild / version          := "0.1.0-SNAPSHOT"
 ThisBuild / organization     := "com.danielroy"
 
 val ScalaVersion          = "2.13.8"
-val ZIOVersion            = "2.0.0-RC2"
-val ZIOConfigVersion      = "3.0.0-RC3"
-val ZIOHttpVersion        = "2.0.0-RC4"
-val ZIOJsonVersion        = "0.3.0-RC3"
-val QuillVersion          = "3.17.0-RC2"
+val ZIOVersion            = "2.0.0-RC6"
+val ZIOConfigVersion      = "3.0.0-RC9"
+val ZIOHttpVersion        = "2.0.0-RC7"
+val ZIOJsonVersion        = "0.3.0-RC8"
+val QuillVersion          = "3.16.5"
 
 lazy val DatabaseDependencies = Seq(
   "io.getquill" %% "quill-zio" % QuillVersion,
@@ -32,7 +32,8 @@ lazy val commonSettings = Seq(
     "dev.zio"                %% "zio-config-refined"  % ZIOConfigVersion,
     "dev.zio"                %% "zio-config-typesafe" % ZIOConfigVersion,
     "dev.zio"                %% "zio-config-magnolia" % ZIOConfigVersion,
-    "eu.timepit"             %% "refined"             % "0.9.28"
+    "eu.timepit"             %% "refined"             % "0.9.28",
+    "com.github.nscala-time" %% "nscala-time"         % "2.30.0"
   )
 )
 
